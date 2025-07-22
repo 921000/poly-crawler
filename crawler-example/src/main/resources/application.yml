@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: my-springboot-app
+server:
+  port: 8088
+  servlet:
+    context-path: /api
+logging:
+  file:
+    name: logs/app.log
+  level:
+    root: INFO
+    org.springframework: INFO
+    com.example: DEBUG
+
+
+#爬虫配置
+crawler:
+  proxy:
+    host: "http2-dyn.abuyun.com"
+    port: 9020
+    userName:
+    password:
+  http:
+    connection-request-timeout: 10000
+    connect-timeout: 10000
+    socket-timeout: 10000
+    max-total-connect: 400
+    max-connect-per-route: 200
+  thread:
+    pool:
+      corePoolSize: 60    # 核心线程数，默认值为 60
+      maxPoolSize: 120    # 最大线程数，默认值为 120
+      queueCapacity: 1000 # 任务队列容量，默认值为 1000
+  #最大重试次数，默认值为 3
+  maxRetries: 3
+  #请求间隔时间，默认值为 2000 毫秒（2 秒）
+  retryDelayMs: 2000
+  #批量请求超时时间，默认值为 300 秒
+  batchTimeoutSeconds: 300
+  ## 单个请求 默认超时时间
+  timeoutSeconds: 10
+
+browser:
+  headless: false
+  user-agents:
+    - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.35"
+    - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 Safari/537.34"
+  poolSize: 1
+  executable-path: "C:/Users/guojund/AppData/Local/Google/Chrome/Application/chrome.exe"
