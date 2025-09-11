@@ -1,6 +1,6 @@
 spring:
   application:
-    name: my-springboot-app
+    name: poly-crawler
 server:
   port: 8088
   servlet:
@@ -21,6 +21,9 @@ crawler:
     port: 9020
     userName:
     password:
+    corePoolSize: 60    # 下载核心线程数，默认值为 60
+    maxPoolSize: 120    # 下载最大线程数，默认值为 120
+    queueCapacity: 1000 # 下载任务队列容量，默认值为 1000
   http:
     connection-request-timeout: 10000
     connect-timeout: 10000

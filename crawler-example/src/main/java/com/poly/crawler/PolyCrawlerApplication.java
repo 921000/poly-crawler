@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version 2024/12/16
  * @since 2024-12-16
  */
-@SpringBootApplication(scanBasePackages = "com.ysten")
+@SpringBootApplication(scanBasePackages = "com.poly")
 public class PolyCrawlerApplication {
 
     public static void main(String[] args) {

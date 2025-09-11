@@ -51,7 +51,9 @@ public class CrawlerProperties {
         private String userName;
         private String password;
 
-        // Getters and Setters
+        private int corePoolSize;
+        private int maxPoolSize;
+        private int queueCapacity;
 
     }
 
