@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.poly.crawler</groupId>
     <artifactId>poly-crawler</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>crawler-parent</name>
     <description>Parent POM for Crawler Project</description>
@@ -36,7 +36,7 @@
 
         <hutool.version>5.8.16</hutool.version>
 
-        <crawler-core.version>1.0</crawler-core.version>
+        <crawler-core.version>1.1-SNAPSHOT</crawler-core.version>
     </properties>
 
     <modules>
